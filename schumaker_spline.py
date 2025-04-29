@@ -1,11 +1,11 @@
 import numpy as np
 from sympy import symbols, Piecewise
 
-def shumaker_spline(x, y, s = None, return_type = 'coeffs'):
+def schumaker_spline(x, y, s = None, return_type = 'coeffs'):
     """
-    Shumaker spline interpolation
+    Schumaker spline interpolation
 
-    The Shumaker spline is a quadratic spline that is co-monotone and co-convex with the data.
+    The Schumaker spline is a quadratic spline that is co-monotone and co-convex with the data.
 
     Args:
         x: array of x-coordinates, in ascending order
