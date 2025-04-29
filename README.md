@@ -26,13 +26,13 @@ import numpy as np
 x = np.array([0, 1, 2, 3, 4, 5, 6])
 y = np.array([0, 0.1, 0.2, 0.15, 1.5, 1.6, 1.55])
 
-print(Schumaker_spline(x, y))
+print(schumaker_spline(x, y))
 ```
 
 By default, it will return a 1D array of x-coordinates and a 2D array of coefficients.
 
 ```python
-knots, coeffs = Schumaker_spline(x, y)
+knots, coeffs = schumaker_spline(x, y)
 ```
 
 The Schumaker algorithm may insert additional x-coordinate values within the given data in order to create the appropriate quadratic splines. So, the final returned `knots`, which contains the original x-coordinates and the additional ones inserted by the algorithm, has length greater or equal to the original array of points `x`.
